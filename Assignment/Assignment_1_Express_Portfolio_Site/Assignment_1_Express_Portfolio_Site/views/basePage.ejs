@@ -25,7 +25,7 @@
     ></script>
   </head>
   <body>
-    <header><%- include('partial/pageHeader', {active: page}); %></header>
-    <div><%- inculde('partials/'+page)%></div>
+    <header><%- include partials/pageHeader.ejs, {active: page}); %></header>
+    <div><%- inculde partials/'+page+'.ejs'%></div>
   </body>
 </html>
