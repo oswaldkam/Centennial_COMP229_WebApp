@@ -1,12 +1,15 @@
-<div>
-     <img src ="images/logos/logo-no-background.svg" alt="Lgog"/>
-</div>
-<nav>
-     <ul class="nav navbar-nav navbar-right">
-          <li><a <%if(active=="home"){%>class="active"<%}%> href="/">Home</a></li>
-          <li><a <%if(active=="projects"){%>class="active"<%}%> href="/projects">Projects</a></li>
-          <li><a <%if(active=="services"){%>class="active"<%}%> href="/services">Services</a></li>
-          <li><a <%if(active=="contact"){%>class="active"<%}%> href="/contact">Contact</a></li>
-          <li><a <%if(active=="aboutMe"){%>class="active"<%}%> href="/aboutMe">About Me</a></li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <a class="navbar-brand">
+          <img cclass="d-inline-block align-top" src ="images/logos/logo-no-background.svg" alt="Lgog" height="50px"/>
+     </a>
+     <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+          <li class="nav-item"><a <%if(active=="home"){%>class="active"<%}%> href="/">Home</a></li>
+          <li class="nav-item"><a <%if(active=="projects"){%>class="active"<%}%> href="/projects">Projects</a></li>
+          <li class="nav-item"><a <%if(active=="services"){%>class="active"<%}%> href="/services">Services</a></li>
+          <li class="nav-item"><a <%if(active=="contact"){%>class="active"<%}%> href="/contact">Contact</a></li>
+          <li class="nav-item"><a <%if(active=="aboutMe"){%>class="active"<%}%> href="/aboutMe">About Me</a></li>
      </ul>
+     </div>
+     
 </nav>
