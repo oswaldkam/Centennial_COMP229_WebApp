@@ -25,7 +25,7 @@
     ></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <%- include('partial/pageHeader', {active: page}); %><br />
+    <%- inculde('partials/'+page)%>
   </body>
 </html>
