@@ -26,5 +26,6 @@
   </head>
   <body>
     <header><%- include('partials/header.ejs',{active: page}) %></header>
+    <div><%- include('partials/'+page+'.ejs',{active: page}) %></div>
   </body>
 </html>

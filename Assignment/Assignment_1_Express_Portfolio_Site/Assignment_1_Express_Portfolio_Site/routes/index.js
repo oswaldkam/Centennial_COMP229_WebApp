@@ -9,9 +9,9 @@ router.get("/aboutMe", function (req, res, next) {
   res.render("basePage", { title: "About Me", page: "aboutMe" });
 });
 router.get("/services", function (req, res, next) {
-  res.render("basePage", { title: "services", page: "services" });
+  res.render("basePage", { title: "Services", page: "services" });
 });
-router.get("/project", function (req, res, next) {
+router.get("/projects", function (req, res, next) {
   res.render("basePage", { title: "Project", page: "projects" });
 });
 router.get("/contact", function (req, res, next) {
