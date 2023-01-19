@@ -3,19 +3,19 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("home", { title: "Home" });
+  res.render("basePage", { title: "Home", page: "home" });
 });
 router.get("/aboutMe", function (req, res, next) {
-  res.render("aboutMe", { title: "About Me", page: "aboutMe" });
+  res.render("basePage", { title: "About Me", page: "aboutMe" });
 });
 router.get("/services", function (req, res, next) {
-  res.render("services", { title: "services", page: "services" });
+  res.render("basePage", { title: "services", page: "services" });
 });
 router.get("/project", function (req, res, next) {
-  res.render("projects", { title: "Project", page: "projects" });
+  res.render("basePage", { title: "Project", page: "projects" });
 });
 router.get("/contact", function (req, res, next) {
-  res.render("contact", { title: "Contact", page: "contact" });
+  res.render("basePage", { title: "Contact", page: "contact" });
 });
 
 module.exports = router;
