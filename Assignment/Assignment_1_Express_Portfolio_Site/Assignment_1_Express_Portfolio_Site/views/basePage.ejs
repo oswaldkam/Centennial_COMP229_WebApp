@@ -27,8 +27,13 @@
   </head>
   <body>
     <header><%- include('partials/header.ejs',{active: page}) %></header>
-    <div class="container-fluid"">
-      <%- include('partials/'+page+'.ejs',{active: page, data: data}) %>
-    </div>
+    <article>
+      <div class="container-fluid"">
+        <%- include('partials/'+page+'.ejs',{active: page, data: data}) %>
+      </div>
+    </article>
+    <footer class="bg-info text-center text-lg-start fixed-bottom"> 
+        <%- include('partials/footer.ejs') %>
+    </footer>
   </body>
 </html>
