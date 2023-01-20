@@ -2,7 +2,12 @@
   <div class="row">
     <div class="col-md-10"><h1>Projects</h1></div>
   </div>
-  <% for(var i=0; i < data.length; i++){ %> <%- include('project.ejs',{title:
-  data[i].title, description:data[i].description, path: data[i].path}) %> <% }
-  %>
+  <ul class="list-group list-group-flush">
+    <% for(var i=0; i < data.length; i++){ %>
+    <li class="list-group-item">
+      <%- include('project.ejs',{title: data[i].title,
+      description:data[i].description, path: data[i].path}) %>
+    </li>
+    <% } %>
+  </ul>
 </div>

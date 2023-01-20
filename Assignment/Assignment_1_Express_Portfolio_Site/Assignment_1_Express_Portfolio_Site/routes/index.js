@@ -1,4 +1,5 @@
-var data = require("../data/projectData");
+var projectData = require("../data/projectData");
+var servicesData = require("../data/servicesData");
 var express = require("express");
 var router = express.Router();
 
@@ -10,13 +11,17 @@ router.get("/aboutMe", function (req, res, next) {
   res.render("basePage", { title: "About Me", page: "aboutMe", data: null });
 });
 router.get("/services", function (req, res, next) {
-  res.render("basePage", { title: "Services", page: "services", data: null });
+  res.render("basePage", {
+    title: "Services",
+    page: "services",
+    data: servicesData.services,
+  });
 });
 router.get("/projects", function (req, res, next) {
   res.render("basePage", {
     title: "Project",
     page: "projects",
-    data: data.projectData,
+    data: projectData.projectData,
   });
 });
 router.get("/contact", function (req, res, next) {
