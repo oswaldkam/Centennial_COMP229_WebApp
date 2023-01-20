@@ -28,7 +28,7 @@
   <body>
     <header><%- include('partials/header.ejs',{active: page}) %></header>
     <div class="container-fluid"">
-      <%- include('partials/'+page+'.ejs',{active: page}) %>
+      <%- include('partials/'+page+'.ejs',{active: page, data: data}) %>
     </div>
   </body>
 </html>
