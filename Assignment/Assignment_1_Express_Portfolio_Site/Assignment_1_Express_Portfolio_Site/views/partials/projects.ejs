@@ -2,8 +2,7 @@
   <div class="row">
     <div class="col-md-10"><h1>Projects</h1></div>
   </div>
-  <% if (data){ %><%- include('project.ejs',{title: page.title, description:
-  data.description, path: data.path})%><% }else{%>
-  <p>No project yet!</p>
-  <%} %>
+  <% for(var i=0; i < data.length; i++){ %> <%- include('project.ejs',{title:
+  data[i].title, description:data[i].description, path: data[i].path}) %> <% }
+  %>
 </div>

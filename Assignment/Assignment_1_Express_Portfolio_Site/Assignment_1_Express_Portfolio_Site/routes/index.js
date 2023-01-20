@@ -1,6 +1,6 @@
+var data = require("../data/projectData");
 var express = require("express");
 var router = express.Router();
-var projectData = require("../data/projectData.js");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
@@ -16,7 +16,7 @@ router.get("/projects", function (req, res, next) {
   res.render("basePage", {
     title: "Project",
     page: "projects",
-    data: projectData.projectData,
+    data: data.projectData,
   });
 });
 router.get("/contact", function (req, res, next) {
