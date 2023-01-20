@@ -6,7 +6,8 @@
     <% for(var i=0; i < data.length; i++){ %>
     <li class="list-group-item">
       <%- include('project.ejs',{title: data[i].title,
-      description:data[i].description, path: data[i].path}) %>
+      description:data[i].description, path: data[i].path, role: data[i].role})
+      %>
     </li>
     <% } %>
   </ul>
