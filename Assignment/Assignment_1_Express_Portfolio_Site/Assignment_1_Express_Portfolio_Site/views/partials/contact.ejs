@@ -1,10 +1,23 @@
+<script>
+  $(document).on("submit", "form.contactForm", do_ajax_call);
+
+  function do_ajax_call(e) {
+    alert(
+      "Hi " +
+        e.target.lastName.value +
+        ", we got your message, thanks for contacting!"
+    );
+    window.location.href = window.location.origin;
+    e.preventDefault();
+  }
+</script>
 <div>
   <div class="row">
     <div class="col-md-12"><h1>Contact</h1></div>
   </div>
   <div class="row">
     <div class="col-md-12">
-      <form>
+      <form class="contactForm" onsubmit="submit()">
         <div class="form-group">
           <div class="form-row">
             <div class="col">
